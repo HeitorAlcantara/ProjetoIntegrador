@@ -1,0 +1,223 @@
+/*#121926
+#63BBF2
+#3E6E8C
+#5A98BF
+#77DCF2*/
+
+/*Formatação geral do html*/
+
+:root{
+    --primary-color: #121926;
+    --second-color: #deedf7;   
+    --third-color: #93b3c7;
+    --fourth-color: #3E6E8C;
+    --white: #fff;
+    --gap: 3rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3.5rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+
+/*Formatação de classes que se repetem no html*/
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.blue-content{
+    background-image: url('../img-bg/image-bg.svg');
+    background-position: center center;
+    color: var(--white);
+}
+
+.white-content{
+    color: var(--primary-color);
+}
+
+/*.distance-top h1{
+    padding-top: 3rem;
+}*/
+
+.min-height {
+    min-height: 100vh;
+}
+
+.images img{
+    max-width: 100%;
+    height: auto;
+}
+
+.button{
+    border: 2px solid var(--fourth-color);
+    border-radius: 25px;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--third-color);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    transition: all 500ms ease-in-out;
+}
+
+.button:hover{
+    border: 2px solid var(--fourth-color);
+    border-radius: 25px;
+    padding: 1.2rem 2.5rem;
+    background-color: var(--fourth-color);
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.menu-nav .button a{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.menu .menu-content .menu-nav .button a:hover{
+    color: var(--primary-color);
+}
+
+/*Formatação do menu*/
+
+.menu{
+    background-image: url('../img-bg/image-bg.svg');
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;   
+    padding-bottom: 0px;
+}
+
+.menu-content h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.menu-content h1 a{
+    color: var(--white);
+}
+
+.menu-content ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-content ul li a{
+    display: block;
+    color: var(--second-color);
+    padding: 2rem;
+    margin-top: 3rem;
+    transition: all 500ms ease-in-out;
+}
+
+.menu-content ul li a:hover{
+    color: var(--fourth-color);
+}
+
+/*Formatação da intro*/
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh; /*Coloca a grid como tamanho total da tela, para alinhar no meio*/
+}
+
+.intro-text-content, .images{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.intro-text-content h1{
+    line-height: 1.2;
+}
+
+.quadrado-flutuante{
+    display: flex;
+    gap: var(--gap);
+    height: 15rem;
+}
+
+.quadrado{
+    height: 12rem;
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 8px;
+    margin-top: 3rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.quadrado:hover{
+    margin-top: -2;
+}
+
+.quadrado p{
+    margin-top: 1.3rem;
+}
+
+.quadrado .p-texto{
+    font-size: 1.3rem;
+    text-align: center;
+    color: var();
+}
+
+.quadrado p a{
+    color: var(--third-color);
+}
+
+/*Formatação da segunda parte*/
+
+.second-part-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh; /*Coloca a grid como tamanho total da tela, para alinhar no meio*/
+}
+
+.second-text-content, .images{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#futuristic{
+    height: 50rem;
+}
