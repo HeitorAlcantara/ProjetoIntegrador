@@ -181,11 +181,12 @@ a{
     border-radius: 8px;
     margin-top: 3rem;
     text-align: center;
-    transition: all 0.2s ease-in-out;
+    transition: .3s linear;
 }
 
 .quadrado:hover{
-    margin-top: -2;
+    transform: scale(1.1);
+    border: 1px solid #6dbeec;
 }
 
 .quadrado p{
@@ -220,4 +221,12 @@ a{
 
 #futuristic{
     height: 50rem;
+}
+
+/*Formatação do Footer*/
+
+.footer{
+    height: 80vh;
+    background-color: var(--primary-color);
+    color: var(--white);
 }
