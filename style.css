@@ -104,6 +104,10 @@ a{
     width: 25rem;
 }
 
+#button2>a{
+    color: var(--primary-color);
+}
+
 #button2:hover{
     transform: scale(1.1);
 }
@@ -115,7 +119,7 @@ a{
 #button3 > a{
     padding: 0;
     margin: 0;
-    color: #121926;
+    color: var(--primary-color);
 }
 
 
