@@ -56,7 +56,7 @@ a{
 }
 
 .blue-content{
-    background-image: url('../img-bg/image-bg.svg');
+    background-image: url('./img-bg/image-bg.svg');
     background-position: center center;
     color: var(--white);
 }
@@ -110,7 +110,7 @@ a{
 /*Formatação do menu*/
 
 .menu{
-    background-image: url('../img-bg/image-bg.svg');
+    background-image: url('./img-bg/image-bg.svg');
 }
 
 .menu-content{
