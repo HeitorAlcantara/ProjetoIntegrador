@@ -2,7 +2,10 @@
 #63BBF2
 #3E6E8C
 #5A98BF
-#77DCF2*/
+#77DCF2
+rgb(196, 173, 79)
+rgb(253, 208, 23)
+*/
 
 /*Formatação geral do html*/
 
@@ -11,6 +14,8 @@
     --second-color: #deedf7;   
     --third-color: #93b3c7;
     --fourth-color: #3E6E8C;
+    --fith-color: #b6b1ff;
+    --contacts: rgb(196, 173, 79);
     --white: #fff;
     --gap: 3rem;
 }
@@ -79,23 +84,41 @@ a{
 }
 
 .button{
-    border: 2px solid var(--fourth-color);
     border-radius: 25px;
     padding: 1.2rem 2.5rem;
-    background-color: var(--third-color);
     text-transform: uppercase;
     margin-top: 3rem;
+    border: 2px solid var(--fourth-color);
+    background-color: var(--third-color);
     transition: all 500ms ease-in-out;
 }
 
-.button:hover{
-    border: 2px solid var(--fourth-color);
-    border-radius: 25px;
-    padding: 1.2rem 2.5rem;
+.button-hover1:hover{
     background-color: var(--fourth-color);
-    text-transform: uppercase;
-    margin-top: 3rem;
 }
+
+#button2{
+    border: 2px solid rgb(196, 173, 79);
+    background-color: rgb(253, 208, 23);
+    transition: .3s linear;
+    width: 25rem;
+}
+
+#button2:hover{
+    transform: scale(1.1);
+}
+
+#button3{
+    width: 25rem;
+}
+
+#button3 > a{
+    padding: 0;
+    margin: 0;
+    color: #121926;
+}
+
+
 
 .menu-nav .button a{
     padding: 0;
@@ -223,10 +246,57 @@ a{
     height: 50rem;
 }
 
+.quadrado2{
+    height: 30rem;
+    width: 100%;
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    margin-top: 3rem;
+    text-align: center;
+    transition: .3s linear;
+}
+
 /*Formatação do Footer*/
 
-.footer{
-    height: 80vh;
+.footer {
+    height: 50vh;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logoFooteer{
+  margin: auto;
+  color: white;
+}
+
+.nossasRedes{
+  margin: auto;
+  color: var(--fith-color);
+}
+
+.icone-Color{
+  color:white;
+  margin: auto;
+}
+
+.nossosContatos{
+  margin: auto;
+  color: var(--fith-color);
+}
+
+.contatos{
+    color: var(--contacts);
+}
+
+#eu{
+    background-color: rgb(228, 59, 59);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
